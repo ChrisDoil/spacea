@@ -9,7 +9,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js"></script>
+    <script src="..\Leaflet.curve\src\leaflet.curve.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,9 +36,11 @@
         <label for="search-box-dest">Destination:</label>
         <input type="text" id="search-box-dest" placeholder="Enter destination base name...">
         <div id="suggestions-dest"></div>
+
+        <button id="calculate-route-button">Calculate Route</button>
     </div>
     <!-- create the map -->
-    <div id="map" style="height: 400px;"></div>
+    <div id="map" style="height: 400px; width: 800px;"></div>
 
     <script src="search_flights_script.js"></script>
     
